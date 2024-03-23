@@ -1,9 +1,9 @@
 > [!Important]
 > While this guide should theoretically work, the files might not and someone needs to test it. If you're planning on using this guide, please join the [Telegram chat](https://t.me/winong8x) so that you can be assisted along the way.
 
-<img align="right" src="https://github.com/n00b69/woa-alphaplus/blob/main/alphaplus.png" width="350" alt="Windows 11 running on alphaplus">
+<img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
 
-# Running Windows on the LG G8
+# Running Windows on the LG G8s
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/winong8x)
 
 ## ⚠️ Warning
@@ -14,7 +14,7 @@ This project is in an early stage, all the files here have been contributed by o
 **IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
 
 > [!Important]
-> This guide is for the LG G8. Click the links here if you are looking for the [LG G8x](https://github.com/Icesito68/Port-Windows-11-Lg-G8x) or the [LG G8s](https://github.com/n00b69/woa-betalm) guides.
+> This guide is for the LG G8s. Click the links here if you are looking for the [LG G8x](https://github.com/Icesito68/Port-Windows-11-Lg-G8x) or the [LG G8](https://github.com/n00b69/woa-alphaplus) guides.
 
 ## Get Started
 - [Project Status](guide/status.md)
