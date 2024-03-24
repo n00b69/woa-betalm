@@ -7,11 +7,11 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [Drivers](https://github.com/n00b69/woa-alphaplus/releases/download/Drivers/alphaplus-drivers.zip)
+- [Drivers](https://github.com/n00b69/woa-betalm/releases/download/Drivers/betalm-drivers.zip)
 
-- [Parted script](https://github.com/n00b69/woa-alphaplus/releases/download/Files/parted)
+- [Parted script](https://github.com/n00b69/woa-betalm/releases/download/Files/parted)
 
-- [Msc script](https://github.com/n00b69/woa-alphaplus/releases/download/Files/msc.sh)
+- [Msc script](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.sh)
 
 - [TWRP or Orange Fox]() FILE NEEDED (should already be installed)
 
@@ -58,7 +58,7 @@ sel par $
 
 #### Formatting Windows drive
 ```cmd
-format quick fs=ntfs label="WINMH2LM"
+format quick fs=ntfs label="WINBETALM"
 ```
 
 #### Add letter to Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Formatting ESP drive
 ```cmd
-format quick fs=fat32 label="ESPMH2LM"
+format quick fs=fat32 label="ESPBETALM"
 ```
 
 #### Add letter to ESP
@@ -118,7 +118,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 #### Installing drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of `WINMH2LM`, which should be X, then press enter
+> Enter the drive letter of `WINBETALM`, which should be X, then press enter
   
 #### Create the Windows bootloader files
 ```cmd
@@ -140,10 +140,32 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
+### Reboot to EDL
+- Open **Device Manager** on your PC
+- With the phone turned off, hold **volume down** + **power**.
+- Keep holding as it displays the unlocked bootloader warning.
+- After the screen turns dark, release the **power** button while continuing to hold the **volume down** button.
+- While holding the **volume down** button, start rapidly pressing the **volume up** button.
+- Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
+
+#### Flashing stock ABL
+> Or your IMEI won't work
+- In **Qfil**, select Tools > Partition manager, and click **Ok**.
+- Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
+- Select and flash the **abl_a** file in `C:\users\name\AppData\roaming\qualcomm\qfil\comportno\`
+- Do the same thing for **abl_b**.
+
 #### Reboot back to Android
 Simply reboot your device
 
 ## [Last step: let's setup dualboot](dualboot.md)
+
+
+
+
+
+
+
 
 
 
