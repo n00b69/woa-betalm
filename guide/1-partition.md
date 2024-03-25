@@ -13,7 +13,7 @@
 
 - [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
   
-- [TWRP](https://github.com/n00b69/woa-betalm/releases/edit/Files/g8stwrp.img)
+- [TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/g8stwrp.img)
 
 ### Notes
 > [!WARNING]  
