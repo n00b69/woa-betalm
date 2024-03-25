@@ -13,7 +13,7 @@
 
 - [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
   
-- [TWRP or Orange Fox]() FILE NEEDED
+- [TWRP](https://github.com/n00b69/woa-betalm/releases/edit/Files/g8stwrp.img)
 
 ### Notes
 > [!WARNING]  
@@ -69,9 +69,7 @@
 > Hold **power** to reboot back to Android
 
 #### Flash TWRP or Orange Fox
-> Use the provided files and flash them in Magisk, then reboot to recovery
->
-> If you have Lineage recovery, you can also use that instead
+> Use the provided TWRP file
 
 #### Unmount all partitions
 Go to mount in TWRP/Orange Fox and unmount all partitions
