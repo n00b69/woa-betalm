@@ -13,7 +13,7 @@
 
 - [Msc script](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.sh)
 
-- [TWRP or Orange Fox]() FILE NEEDED (should already be installed)
+- [TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/g8stwrp.img) (should already be installed)
 
 ### Boot to recovery
 > Boot to TWRP, Orange Fox, or Lineage Recovery
