@@ -7,7 +7,7 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [Drivers](https://github.com/n00b69/woa-betalm/releases/download/Drivers/betalm-drivers.zip)
+- [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
 
 - [Parted script](https://github.com/n00b69/woa-betalm/releases/download/Files/parted)
 
