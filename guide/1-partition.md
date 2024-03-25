@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-alphaplus/releases/tag/Qfil) (to back up partitions)
+- [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil) (to back up partitions)
   
 - [Parted script](https://github.com/n00b69/woa-betalm/releases/download/Files/parted)
 
