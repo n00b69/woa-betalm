@@ -1,8 +1,5 @@
-> [!Warning]
-> The files provided in this guide have not been tested, please join the [Telegram chat](https://t.me/winong8x) if you are planning on installing Windows
-
 > [!Important]
-> While this guide should theoretically work, the files might not and someone needs to test it. If you're planning on using this guide, please join the [Telegram chat](https://t.me/winong8x) so that you can be assisted along the way.
+> The files provided in this guide have not been tested, please join the [Telegram chat](https://t.me/winong8x) if you are planning on installing Windows
 
 <img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
 
