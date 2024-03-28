@@ -9,7 +9,7 @@
   
 - [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
 
-- [UEFI](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
 #### Boot to the UEFI
 > Replace **<path\to\betalm-uefi.img>** with the actual path of the UEFI image
