@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-alphaplus/blob/main/alphaplus.png" width="350" alt="Windows 11 running on alphaplus">
+<img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
 
-# Running Windows on the LG G8
+# Running Windows on the LG G8s
 
 ## Partitioning your device
 
