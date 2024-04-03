@@ -38,12 +38,6 @@
 - Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
 - If the device has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue to the next step.
 
-#### Reboot to download mode
-- Hold **volume down** + **power**.
-- Keep holding as it displays the unlocked bootloader warning.
-- After the screen turns dark, release the **power** button while continuing to hold the **volume down** button.
-- While holding the **volume down** button, press the **volume up** button.
-
 #### Setting up Qfil
 - Open **Qfil**.
 - In "Select Build Type", select **flat build**.
