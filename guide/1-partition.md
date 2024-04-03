@@ -59,14 +59,25 @@
 - Select and flash the **engabl_ab.bin** file.
 - Do the same thing for **abl_b**.
 
-#### Reboot your phone
-> Hold **power** to reboot back to Android
+#### Reboot to fastboot mode
+- Reboot your phone.
+- After it has booted, unplug the cable and power it off.
+- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
+- While in fastboot mode, keep replugging the cable until the device is recognized
 
-#### Flash TWRP or Orange Fox
-> Use the provided TWRP file
+#### Boot into TWRP
+> Replace `path\to\g8stwrp.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
+```cmd
+fastboot boot path\to\g8stwrp.img
+```
 
-#### Unmount all partitions
-Go to mount in TWRP/Orange Fox and unmount all partitions
+#### Checking if the device is recognized
+> Replug the cable if it is not
+```cmd
+adb devices```
+```
 
 ### Preparing for partitioning
 > Download the parted file and move it in the platform-tools folder, then run
@@ -89,11 +100,11 @@ rm $
 ```
 
 #### Recreating userdata
-> Replace **19GB** with the former start value of **userdata** which we just deleted
+> Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
 > Replace **40GB** with the end value you want **userdata** to have
 ```cmd
-mkpart userdata ext4 19GB 40GB
+mkpart userdata ext4 17.7GB 40GB
 ```
 
 #### Creating ESP partition
@@ -123,11 +134,9 @@ set $ esp on
 quit
 ```
 
-#### Format all data
-Go to the Wipe menu in TWRP, press Format Data, then type `yes`.
-
-#### Check if Android still starts
-Just reboot the phone and see if Android still boots.
+### Reboot your phone
+> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
+- Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
 
 ## [Next step: Installing Windows](2-install.md)
 
