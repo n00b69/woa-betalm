@@ -8,12 +8,10 @@
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
 - [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
-  
-- [Parted script](https://github.com/n00b69/woa-betalm/releases/download/Files/parted)
 
 - [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
   
-- [TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/g8stwrp.img)
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
 
 ### Notes
 > [!WARNING]  
@@ -64,23 +62,17 @@
 - While in fastboot mode, keep replugging the cable until the device is recognized
 
 #### Boot into TWRP
-> Replace `path\to\g8stwrp.img` with the actual path of the provided TWRP image
+> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\g8stwrp.img
-```
-
-#### Checking if the device is recognized
-> Replug the cable if it is not
-```cmd
-adb devices```
+fastboot boot path\to\moddedg8s.img
 ```
 
 ### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, then run
+> Replug the cable if it says "no devices/emulators found"
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
