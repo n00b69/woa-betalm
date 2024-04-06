@@ -7,27 +7,30 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil) (to restore partitions)
+- [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
   
-- [Parted script](https://github.com/n00b69/woa-betalm/releases/download/Files/parted)
-  
-- [TWRP or Orange Fox]() FILE NEEDED
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
   
 - Boot backups
 
-#### Restore boot backups
-> Go to EDL mode and use Qfil to restore your boot_a and boot_b backups
+### Reboot to fastboot mode
+- Reboot your phone.
+- After it has booted, unplug the cable and power it off.
+- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
+- While in fastboot mode, keep replugging the cable until the device is recognized
 
-#### Boot TWRP on the device
-> Use the Magisk module linked above if you don't already have it installed
-
-#### Unmount all partitions
-> Go to mount in TWRP and unmount all partitions
-
-#### Run parted
-> Put parted in your platform tools folder, then run
+#### Boot into TWRP
+> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-adb push parted /cache && chmod 755 /cache/parted && /parted /dev/block/sda
+fastboot boot path\to\moddedg8s.img
+```
+
+### Running parted
+> Replug the cable if it says "no devices/emulators found"
+```cmd
+adb shell parted /dev/block/sda
 ```
 
 #### Delete Windows Partition
@@ -54,13 +57,48 @@ resizepart 30
 quit
 ```
 
-#### Format data
-Go to the Wipe menu in TWRP and press Format Data, then type `yes`
+### Reboot your phone
+```cmd
+adb reboot
+```
+> [!note]
+> If your last boot was in Windows, you may find yourself booting the UEFI instead of Android. If this is the case, you'll need to do the additional steps below.
 
-#### Check if Android boots
-Reboot your device and check if Android boots
+### Boot to EDL
+- Open **Device Manager** on your PC
+- With the phone turned off, hold **volume down** + **power**.
+- After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
+- Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
+- If the device is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue to the next step.
+
+#### Setting up Qfil
+- Open **Qfil**.
+- In "Select Build Type", select **flat build**.
+- In "Select programmer", select the downloaded firehose.
+- In Configuration, make sure the "Device Type" is set to **UFS**.
+
+#### Flashing engineering ABL
+- In **Qfil**, select Tools > Partition manager, and click **Ok**.
+- Right click on **boot_a** > **Manage Partition Data** and press **Load Image**.
+- Select and flash the **boot_a** backup you made earlier when installing Windows (which should be in `C:\users\name\AppData\roaming\qualcomm\qfil\comportno\`)
+- Do the same thing for **boot_b**.
+
+### Reboot your phone
+- Hold **volume down** + **power** until it shows the LG G8s logo, then release the buttons.
 
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
