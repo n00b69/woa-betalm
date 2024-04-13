@@ -1,5 +1,5 @@
 > [!Warning]
-> This device and the files provided in this guide have issues. Do not use.
+> This device and the files provided in this guide have issues. Windows will boot but you cannot interact with it at all. **Do not use**.
 
 <img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
 
@@ -31,7 +31,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Update drivers](guide/update.md)
 
-- ~~[Reinstall instructions](guide/reinstall.md)~~
+- [Reinstall instructions](guide/reinstall.md)
 
 - [Uninstall instructions](guide/uninstall.md)
 
