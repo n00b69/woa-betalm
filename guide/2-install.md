@@ -11,7 +11,7 @@
 
 - [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
-#### Boot to the UEFI
+### Boot to the UEFI
 > Replace **<path\to\betalm-msc.img>** with the actual path of the UEFI image
 ```cmd
 fastboot boot <path\to\betalm-msc.img>
