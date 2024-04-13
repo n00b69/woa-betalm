@@ -21,7 +21,7 @@ fastboot boot <path\to\betalm-msc.img>
 > Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
 - Select **UEFI Boot Menu**.
 - Select **USB Attached SCSI (UAS) Storage**.
-- Press the power button twice.
+- Press the **power** button twice.
 
 ### Diskpart
 > [!WARNING]
