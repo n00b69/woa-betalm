@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
+<img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
 
-# Running Windows on the Xiaomi Pocophone F1
+# Running Windows on the LG G8s
 
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
