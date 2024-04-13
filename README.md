@@ -16,20 +16,24 @@ This project is in an early stage, all the files here have been contributed by o
 > [!Important]
 > This guide is for the LG G8s. Click the links here if you are looking for the [LG G8x](https://github.com/Icesito68/Port-Windows-11-Lg-G8x) or the [LG G8](https://github.com/n00b69/woa-alphaplus) guides.
 
-## Get Started
-- [Project Status](guide/status.md)
- 
+## Get started
+- [Project status](guide/status.md)
+
 - [Installation instructions](guide/1-partition.md)
 
-- [Uninstall instructions](guide/uninstall.md)
+- ~~[Troubleshooting](guide/troubleshooting.md)~~
 
 
 ## Miscellaneous
-- [Dualboot setup](/guide/dualboot.md)
+- [Dualboot setup](guide/dualboot.md)
 
-- [Driver updating instructions](guide/update.md)
+- [Additional materials](guide/materials.md)
 
-- [Extra](guide/materials.md)
+- [Update drivers](guide/update.md)
+
+- ~~[Reinstall instructions](guide/reinstall.md)~~
+
+- [Uninstall instructions](guide/uninstall.md)
 
 ## Contributors
 [<img alt="MollySophia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20746884?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/MollySophia)
