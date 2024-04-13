@@ -32,7 +32,7 @@
 - With the phone turned off, hold **volume down** + **power**.
 - After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
 - Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
-- If the device is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue to the next step.
+- If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
 
 #### Setting up Qfil
 - Open **Qfil**.
@@ -59,7 +59,7 @@
 - Reboot your phone.
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-- While in fastboot mode, keep replugging the cable until the device is recognized
+- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 #### Boot into TWRP
 > Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
