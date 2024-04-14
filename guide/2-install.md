@@ -26,19 +26,20 @@ fastboot boot <path\to\betalm-msc.img>
 ### Diskpart
 > [!WARNING]
 > DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to LG or flashing it with EDL, both of which will likely cost money)
-
 ```cmd
 diskpart
 ```
 
 #### Finding your phone
 > This will list all connected disks
+>
+> Look for your phone (which should be the last disk which will be 117GB in size). If you do not see it, wait a few seconds and run the command again. Repeat this until you see the disk.
 ```cmd
 lis dis
 ```
 
 #### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
+> Replace $ with the actual number of your phone
 ```cmd
 sel dis $
 ```
