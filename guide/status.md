@@ -6,27 +6,27 @@
 Alpha. Most things don't work (yet), but they might eventually.
 
 #### Features
-- [ ] Audio
-- [ ] Battery percentage
+- [ ] Audio ```might get fixed```
+- [ ] Battery percentage ```might get fixed```
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [ ] Charging
+- [ ] Charging ```might get fixed```
 - [x] Display
 - [ ] FM
-- [ ] GPU
+- [ ] GPU ```might get fixed```
 - [ ] LTE 
 - [ ] SD
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
-- [ ] WiFi
+- [ ] WiFi ```might get fixed```
 - [ ] Wireless charging ```unknown```
 
 #### Sensors
 - [ ] Accelerometer
 - [ ] Fingerprint
-- [ ] GPS
+- [ ] GPS ```might get fixed```
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
