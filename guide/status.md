@@ -26,7 +26,7 @@ Alpha. Most things don't work (yet), but they might eventually.
 #### Sensors
 - [ ] Accelerometer
 - [ ] Fingerprint
-- [] GPS
+- [ ] GPS
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
