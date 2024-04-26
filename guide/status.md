@@ -6,28 +6,27 @@
 Beta. Most of the hardware works, but some components do not work yet.
 
 #### Features
-- [x] Audio
-- [x] Battery percentage
+- [ ] Audio
+- [ ] Battery percentage
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [x] Charging ```DEAD slow```
+- [ ] Charging
 - [x] Display
 - [ ] FM
-- [x] GPU
+- [ ] GPU
 - [ ] LTE 
-- [ ] SD ```unknown```
+- [ ] SD
 - [x] Touchscreen
 - [x] UFS
-- [x] USB ```If you try to charge the phone it will stop working```
-- [x] WiFi
+- [x] USB
+- [ ] WiFi
 - [ ] Wireless charging ```unknown```
-
 
 #### Sensors
 - [ ] Accelerometer
 - [ ] Fingerprint
-- [x] GPS
+- [] GPS
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
