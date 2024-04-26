@@ -3,7 +3,7 @@
 # Running Windows on the LG G8s
 
 ## Project status
-Beta. Most of the hardware works, but some components do not work yet.
+Alpha. Most things don't work (yet), but they might eventually.
 
 #### Features
 - [ ] Audio
