@@ -16,7 +16,7 @@ Alpha. Most things don't work (yet), but they might eventually.
 - [ ] FM
 - [x] GPU ```bsod issues```
 - [ ] LTE 
-- [ ] SD
+- [ ] SD ```might get fixed```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
