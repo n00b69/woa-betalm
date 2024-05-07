@@ -13,7 +13,7 @@ Alpha. Most things don't work (yet), but they might eventually.
 - [ ] Camera
 - [ ] Charging ```might get fixed```
 - [x] Display
-- [ ] FM
+- [ ] FM radio
 - [x] GPU ```bsod issues```
 - [ ] LTE 
 - [ ] SD ```might get fixed```
