@@ -14,7 +14,7 @@ Alpha. Most things don't work (yet), but they might eventually.
 - [ ] Charging ```might get fixed```
 - [x] Display
 - [ ] FM
-- [ ] GPU ```might get fixed```
+- [x] GPU ```bsod issues```
 - [ ] LTE 
 - [ ] SD
 - [x] Touchscreen
