@@ -3,10 +3,10 @@
 # Running Windows on the LG G8s
 
 ## Project status
-Alpha. Most things don't work (yet), but they might eventually.
+Alpha. Some things work, some don't. Current main objective is to get battery and audio working.
 
 #### Features
-- [ ] Audio ```might get fixed```
+- [ ] Audio ```3.5mm only (for now)```
 - [ ] Battery percentage ```might get fixed```
 - [x] Bluetooth
 - [x] Brightness
@@ -14,19 +14,19 @@ Alpha. Most things don't work (yet), but they might eventually.
 - [ ] Charging ```might get fixed```
 - [x] Display
 - [ ] FM radio
-- [x] GPU ```bsod issues```
+- [x] GPU
 - [ ] LTE 
 - [ ] SD ```might get fixed```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
-- [ ] WiFi ```might get fixed```
+- [x] WiFi
 - [ ] Wireless charging ```unknown```
 
 #### Sensors
 - [ ] Accelerometer
 - [ ] Fingerprint
-- [ ] GPS ```might get fixed```
+- [x] GPS
 - [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
