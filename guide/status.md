@@ -3,11 +3,11 @@
 # Running Windows on the LG G8s
 
 ## Project status
-Alpha. Some things work, some don't. Current main objective is to get battery and audio working.
+Alpha. Some things work, some don't. Current main objective is to get charging and audio working.
 
 #### Features
 - [ ] Audio ```3.5mm only (for now)```
-- [ ] Battery percentage ```might get fixed```
+- [x] Battery percentage
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
