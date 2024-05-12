@@ -14,7 +14,7 @@ Alpha. Some things work, some don't. Current main objective is to get charging a
 - [ ] Charging ```might get fixed```
 - [x] Display
 - [ ] FM radio
-- [x] GPU
+- [x] GPU ```minor issues```
 - [ ] LTE 
 - [ ] SD ```might get fixed```
 - [x] Touchscreen
