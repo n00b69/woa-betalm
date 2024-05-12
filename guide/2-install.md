@@ -12,9 +12,9 @@
 - [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **<path\to\betalm-msc.img>** with the actual path of the UEFI image
+> Replace **<path\to\betalm-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\betalm-msc.img>
+fastboot boot <path\to\betalm-uefi.img>
 ```
 
 #### Enabling mass storage mode
@@ -99,7 +99,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Installing drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of `WINBETALM`, which should be X, then press enter
+> Enter the drive letter of `WINBETALM`, which should be **X**, then press enter
   
 #### Create the Windows bootloader files
 ```cmd
@@ -131,7 +131,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 > Or your IMEI won't work
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **abl_a** file in `C:\users\name\AppData\roaming\qualcomm\qfil\comportno\`
+- Select and flash the **abl_a** file in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`
 - Do the same thing for **abl_b**.
 
 #### Reboot back to Android
