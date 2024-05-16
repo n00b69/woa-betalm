@@ -122,6 +122,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Reboot to EDL
+> If you didn't flash the engineering ABL on the previous page, you can skip this step and simply reboot your device
 - Open **Device Manager** on your PC
 - Hold **volume down** + **power**.
 - After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
