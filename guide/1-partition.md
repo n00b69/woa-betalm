@@ -38,7 +38,7 @@
 - Open **Qfil**.
 - In "Select Build Type", select **flat build**.
 - In "Select programmer", select the downloaded firehose.
-- In Configuration, make sure the "Device Type" is set to **UFS**.
+- In "Configuration", make sure the "Device Type" is set to **UFS**.
 
 #### Backing up your partitions
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
