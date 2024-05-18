@@ -117,7 +117,7 @@ mkpart OP_a ext4 8329MB 9063MB
 >
 > If you have Windows installed, replace **126GB** with the start value of the **win** partition.
 > 
-> If not, replace **126GB** by the end value of your disk. To get this value, run `print` and look at the value listed right after **Disk /dev/block/sda:**
+> If not, replace **126GB** with the end value of your disk. To get this value, run `print` and look at the value listed right after **Disk /dev/block/sda:**
 ```cmd
 mkpart userdata ext4 9063MB 126GB
 ```
