@@ -90,30 +90,41 @@ rm $
 ```
 
 #### Creating system_a partition
-> Replace **17.7GB** with the former start value of **userdata** which we just deleted
+> Scroll back to the list that appeared when you ran `print`. Next to the names of the now removed partitions you will see three values. **Start**, **End**, and **Size**. **Size** will be important here.
+> 
+> Replace **2159MB** with the **End** value of **vendor_a**
 >
-> Replace **60GB** with the end value you want **userdata** to have
+> Use a calculator to add the **Size** of **system_a** to the **End** value, then replace **6181MB** with this value
 ```cmd
 mkpart system_a ext2 2159MB 6181MB
 ```
 
+#### Checking
+> Sometimes parted will round down partition sizes. Make sure **system_a** actually ends at **6181MB**, or the value you used, by running the `print` command.
+>
+> If the **End** value is lower, for example **6180MB**, remove the partition and remake it, but this time add **1MB** to the end value (for example **6182MB**).
+
 #### Creating product_a partition
+> Do the same thing with **product_a**, use a calculator to double check the values and use `print` to make sure the value is correct afterwards.
 ```cmd
 mkpart product_a ext2 6181MB 8329MB
 ```
 
 #### Creating OP_a partition
+> Do the same thing with **OP_a**, use a calculator to double check the values and use `print` to make sure the value is correct afterwards.
 ```cmd
 mkpart OP_a ext4 8329MB 9063MB
 ```
 
 #### Resizing userdata partition
-
-
-
-
-
-
+> Replace **9063MB** with the end value of **OP_a**.
+>
+> If you have Windows installed, replace **126GB** with the start value of the **win** partition.
+> 
+> If not, replace **126GB** by the end value of your disk. To get this value, run `print` and look at the value listed right after **Disk /dev/block/sda:**
+```cmd
+mkpart userdata ext4 9063MB 126GB
+```
 
 #### Exit parted
 ```cmd
