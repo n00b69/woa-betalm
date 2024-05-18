@@ -99,24 +99,24 @@ rm $
 mkpart system_a ext2 2159MB 6181MB
 ```
 
-#### Checking
+#### Checking the partition size
 > Sometimes parted will round down partition sizes. Make sure **system_a** actually ends at **6181MB**, or the value you used, by running the `print` command.
 >
 > If the **End** value is lower, for example **6180MB**, remove the partition and remake it, but this time add **1MB** to the end value (for example **6182MB**).
 
-#### Creating product_a partition
+#### Creating the product_a partition
 > Do the same thing with **product_a**, use a calculator to double check the values and use `print` to make sure the value is correct afterwards.
 ```cmd
 mkpart product_a ext2 6181MB 8329MB
 ```
 
-#### Creating OP_a partition
+#### Creating the OP_a partition
 > Do the same thing with **OP_a**, use a calculator to double check the values and use `print` to make sure the value is correct afterwards.
 ```cmd
 mkpart OP_a ext4 8329MB 9063MB
 ```
 
-#### Resizing userdata partition
+#### Creating the userdata partition
 > Replace **9063MB** with the end value of **OP_a**.
 >
 > If you have Windows installed, replace **126GB** with the start value of the **win** partition.
@@ -131,9 +131,17 @@ mkpart userdata ext4 9063MB 126GB
 quit
 ```
 
-### Reboot your phone
-> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
-- Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
+### Reboot back into EDL
+> To restore the contents of the partitions, or your phone will not boot
+
+#### Restoring your partitions
+- In **Qfil**, select Tools > Partition manager, and click **Ok**.
+- Right click on **system_a** > **Manage Partition Data** and press **Load Image**.
+- Select and flash the backup you made earlier.
+- Do the same thing for **product_a** and **OP_a**.
+
+#### Erasing userdata
+
 
 ## Finished!
 
