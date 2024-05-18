@@ -16,18 +16,16 @@
 - [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
 
 ### Notes
-> [!WARNING]  
-> 
-> Do not run the same command twice unless specified.
->  
-> Do not run all commands at once, execute them in order!
+> [!WARNING]
 >
+> You will lose all of your data, so make sure you make a backup of your files beforehand. This guide does not instruct you on how to do this, because it will be different depending on the ROM you are using.
+> 
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
 >
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/winong8x).
 
 ### Backing up partitions
-> If you don't do this and mess something up, you're on your own
+> In this guide we will be deleting and recreating critical partitions of your phone. If you follow the instructions to the letter, you will be fine.
 
 #### Boot to EDL
 - Open **Device Manager** on your PC
