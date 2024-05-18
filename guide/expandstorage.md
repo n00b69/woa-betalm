@@ -78,7 +78,7 @@ adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
-> Parted will print the list of partitions, **userdata** should be the last partition in the list.
+> Parted will print the list of partitions. Do not close the window, because you will need some values from this list as they may differ from the values used in this guide.
 ```cmd
 print
 ```
@@ -86,7 +86,7 @@ print
 #### Removing userdata
 > Replace **$** with the number of the **userdata** partition, which should be **30**
 > 
-> If you have a **grow** partition, remove it as well
+> 
 ```cmd
 rm $
 ```
@@ -100,26 +100,9 @@ mkpart userdata ext4 17.7GB 60GB
 ```
 
 #### Creating ESP partition
-> Replace **60GB** with the end value of **userdata**
 >
-> Replace **60.3GB** with the value you used before, adding **0.3GB** to it
-```cmd
-mkpart esp fat32 60GB 60.3GB
-```
 
-#### Creating Windows partition
-> Replace **60.3GB** with the end value of **esp**
->
-> Replace **126GB** with the end value of your disk, use `p free` to find it
-```cmd
-mkpart win ntfs 60.3GB 126GB
-```
 
-#### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 31
-```cmd
-set $ esp on
-```
 
 #### Exit parted
 ```cmd
@@ -130,8 +113,7 @@ quit
 > Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
 - Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
 
-## [Next step: Installing Windows](2-install.md)
-
+## Finished!
 
 
 
