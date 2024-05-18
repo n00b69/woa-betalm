@@ -81,24 +81,37 @@ adb shell parted /dev/block/sda
 print
 ```
 
-#### Removing userdata
-> Replace **$** with the number of the **userdata** partition, which should be **30**
-> 
-> 
+#### Removing system partitions
+> Replace **$** with the number of the **vendor_b** partition, which should be **23**
+>
+> Do the same thing for **system_a**, **system_b**, **product_a**, **product_b**, **OP_a** and **OP_b**
 ```cmd
 rm $
 ```
 
-#### Recreating userdata
+#### Creating system_a partition
 > Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
 > Replace **60GB** with the end value you want **userdata** to have
 ```cmd
-mkpart userdata ext4 17.7GB 60GB
+mkpart system_a ext2 2159MB 6181MB
 ```
 
-#### Creating ESP partition
->
+#### Creating product_a partition
+```cmd
+mkpart product_a ext2 6181MB 8329MB
+```
+
+#### Creating OP_a partition
+```cmd
+mkpart OP_a ext4 8329MB 9063MB
+```
+
+#### Resizing userdata partition
+
+
+
+
 
 
 
