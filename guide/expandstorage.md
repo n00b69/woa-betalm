@@ -43,7 +43,7 @@
 #### Backing up your partitions
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **vendor_a** > **Manage Partition Data** and press **Read Data**.
-- Do the same thing for **system_a**, **system_b**, **product_a**, **product_b**, **OP_a** and **OP_b**.
+- Do the same thing for **abl_a**, **abl_b**, **system_a**, **system_b**, **product_a**, **product_b**, **OP_a** and **OP_b**.
 
 > [!Important]
 > Navigate to `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\` and rename the backed up partitions one by one as you back them up. Qfil does not name the backups, and if you don't rename them, it'll be impossible to figure out which files are which. You can restore them later with the **Load Image** function.
@@ -135,13 +135,25 @@ quit
 > To restore the contents of the partitions, or your phone will not boot
 
 #### Restoring your partitions
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
+- In **Qfil**, select Tools > Partition Manager, and click **Ok**.
 - Right click on **system_a** > **Manage Partition Data** and press **Load Image**.
 - Select and flash the backup you made earlier.
 - Do the same thing for **product_a** and **OP_a**.
+- If you've flashed engineering ABL to get access to fastboot, also restore **abl_a** and **abl_b**.
 
 #### Erasing userdata
+- Select the **userdata** partition.
+- Press **Erase** to erase its contents.
+- Exit Partition Manager.
 
+#### Reboot your device
+> After exiting the partition manager, Qfil will reboot your phone to EDL. After this has happened, force reboot your phone by holding **volume down** + **power** until the LG logo appears.
+>
+> It may take a while before your device boots. If it doesn't, you may need to reflash your ROM with fastboot or EDL.
+
+#### Disabling updates
+> [!Important]
+> After you've booted into Android, make sure you disable all system updates. These may softbrick your device by attempting to install updates to partitions that no longer exist.
 
 ## Finished!
 
