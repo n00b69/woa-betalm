@@ -23,9 +23,6 @@
 >
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/winong8x).
 
-### Backing up partitions
-> In this guide we will be deleting and recreating critical partitions of your phone. If you follow the instructions to the letter, you will be fine.
-
 #### Boot to EDL
 - Open **Device Manager** on your PC
 - With the phone turned off, hold **volume down** + **power**.
@@ -48,7 +45,7 @@
 > Navigate to `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\` and rename the backed up partitions one by one as you back them up. Qfil does not name the backups, and if you don't rename them, it'll be impossible to figure out which files are which. You can restore them later with the **Load Image** function.
 
 ### Flashing engineering ABL
-> If fastboot works on your phone, you can skip this step
+> If fastboot works on your phone, you can skip this step and boot straight to fastboot
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
 - Select and flash the **engabl_ab.bin** file.
