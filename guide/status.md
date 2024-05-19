@@ -5,6 +5,8 @@
 ## Project status
 Alpha. Some things work, some don't. Current main objective is to get charging and audio working.
 
+There are currently issues with restarting/shutting down the device while in Windows, requiring you to force reboot using the power + volume down button. This will hopefully be fixed soon.
+
 #### Features
 - [ ] Audio ```3.5mm only (for now)```
 - [x] Battery percentage
