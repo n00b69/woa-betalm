@@ -13,12 +13,11 @@
 
 ### Reboot to fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 ### Boot to the UEFI
-> Replace **<path\to\betalm-uefi.img>** with the actual path of the UEFI image
+> Replace **path\to\betalm-uefi.img** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\betalm-uefi.img>
+fastboot boot path\to\betalm-uefi.img
 ```
 
 #### Enabling mass storage mode
@@ -126,11 +125,11 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Reboot to EDL
-> If you didn't flash the engineering ABL on the previous page, you can skip this step and simply reboot your device
+> If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
 - Open **Device Manager** on your PC
 - Hold **volume down** + **power**.
 - After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
+- Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
 
 #### Flashing stock ABL
 > Or your IMEI won't work
@@ -140,9 +139,9 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 - Do the same thing for **abl_b**.
 
 #### Reboot back to Android
-Simply reboot your device
+- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
-## [Last step: let's setup dualboot](dualboot.md)
+## [Last step: Setting up dualboot](dualboot.md)
 
 
 
