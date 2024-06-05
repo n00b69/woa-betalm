@@ -37,11 +37,13 @@
 - Open **Device Manager** on your PC
 - With the phone turned off, hold **volume down** + **power**.
 - After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you hear a USB connection sound on your PC, or when **QDLoader 9008** or **QUSB_BULK** appears in the Device Manager on your PC (it should be in the **Ports (COM & LPT)** category).
-- If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
+- Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
+- If the device is called **QUSB_BULK_CID** or has a ⚠️ yellow warning triangle / question mark, and is located in any other category (for example **Other devices**), you need to install EDL drivers first.
+- To install EDL drivers, extract the contents of **QUD.zip** somewhere, right click on **QUSB_BULK_CID**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Making sure Qfil works
-- In **Qfil**, select "Tools" > "Partition manager", and click **Ok**.
+- In **Qfil**, make sure the correct port is selected. If it says `No Port Available`, select the **Qualcomm HS-USB QDLoader 9008** port.
+- At the top, select "Tools" > "Partition manager", and click **Ok**.
 - If you see a **Download Fail:Sahara Fail** error, make sure your cable stays connected and reboot to EDL again by holding **volume down** + **power**, then start rapidly pressing the **volume up** button once the LG logo appears.
 - Once you're back in EDL, try opening the Partition manager again.
 - If it still fails, try to repeat the last step a few times. You can also try rebooting your phone and PC.
@@ -49,7 +51,7 @@
 #### Backing up your partitions
 - In the Partition manager, right click on **laf_a** > **Manage Partition Data** and press **Read Data**.
 - Do the same thing for **boot_a**, **abl_a**, **aop_a**, **xbl_a**, **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
-- If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to back up every partition. In this guide we only back up the most critical partitions.
+- If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to additionally back up every partition. In this guide we only back up the most critical partitions.
 
 > [!Important]
 > Navigate to `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\` and rename the backed up partitions one by one as you back them up. Qfil does not name the backups, and if you don't rename them, it'll be impossible to figure out which files are which. You can restore them later with the **Load Image** function.
@@ -66,8 +68,9 @@
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+- To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
-#### Boot into TWRP
+#### Boot into the modded TWRP
 > Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
