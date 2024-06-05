@@ -9,7 +9,9 @@
 
 - [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
 
-- [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
+- [QFILHelper](https://github.com/Beliathal/QFILHelper) Optional, for easier partition backups
+
+- [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin) Only needed if you don't have fastboot
   
 - [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
 
