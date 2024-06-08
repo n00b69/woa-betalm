@@ -16,14 +16,14 @@ There are currently issues with restarting/shutting down the device while in Win
 - [ ] Charging ```might get fixed```
 - [x] Display
 - [ ] FM radio
-- [x] GPU ```minor issues```
+- [x] GPU
 - [ ] LTE 
-- [ ] SD ```might get fixed```
+- [ ] SD ```only in WinPE```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] WiFi
-- [ ] Wireless charging ```unknown```
+- [ ] Wireless charging
 
 #### Sensors
 - [ ] Accelerometer
