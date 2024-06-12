@@ -13,7 +13,8 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [ ] Charging ```might get fixed```
+- [ ] Charging (USB)```might get fixed```
+- [x] Charging (Wireless)
 - [x] Display
 - [x] GPU
 - [ ] LTE 
@@ -22,7 +23,6 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] UFS
 - [x] USB
 - [x] WiFi
-- [x] Wireless charging
 
 #### Sensors
 - [ ] Accelerometer
