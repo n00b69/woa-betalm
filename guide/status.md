@@ -23,7 +23,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] UFS
 - [x] USB
 - [x] WiFi
-- [ ] Wireless charging
+- [x] Wireless charging
 
 #### Sensors
 - [ ] Accelerometer
