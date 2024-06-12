@@ -15,7 +15,6 @@ There are currently issues with restarting/shutting down the device while in Win
 - [ ] Camera
 - [ ] Charging ```might get fixed```
 - [x] Display
-- [ ] FM radio
 - [x] GPU
 - [ ] LTE 
 - [ ] SD ```only in WinPE```
