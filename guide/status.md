@@ -19,7 +19,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Display
 - [x] GPU
 - [ ] LTE/SMS
-- [ ] SD ```only in WinPE```
+- [ ] SD Card ```only in WinPE```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
