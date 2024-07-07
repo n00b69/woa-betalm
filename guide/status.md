@@ -3,7 +3,7 @@
 # Running Windows on the LG G8s
 
 ## Project status
-Current main objective is to get USB charging and speaker audio working.
+Current main objective is to get speaker audio working.
 
 There are currently issues with restarting/shutting down the device while in Windows, requiring you to force reboot using the power + volume down button. This will hopefully be fixed soon.
 
@@ -14,7 +14,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [ ] Charging (USB)
+- [x] Charging (USB)
 - [x] Charging (Wireless)
 - [x] Display
 - [x] GPU
