@@ -26,12 +26,13 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] WiFi
 
 #### Sensors
-- [ ] Accelerometer
+- [x] Accelerometer ```portrait orientations are inversed```
+- [x] Compass ```recognized but not fully working```
 - [ ] Fingerprint
 - [x] GPS
-- [ ] Gyroscope
+- [x] Gyroscope ```portrait orientations are inversed```
 - [ ] Light sensor
-- [ ] Magnetometer
+- [x] Magnetometer
 - [ ] Proximity
 
 
