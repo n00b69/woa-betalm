@@ -11,6 +11,8 @@
 
 - [Mass storage image](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.img)
 
+- [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
+
 ### Reboot to fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
@@ -126,6 +128,36 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
+
+### Booting Windows
+- Reboot your device by holding the **volume down** + **power** buttons until the text on the screen disappears, then immediately release the **power** button whilst continuing to hold **volume down**
+
+> Replace `path\to\betalm-uefi.img` with the actual path of the image
+```cmd
+fastboot boot path\to\betalm-uefi.img
+```
+
+> After around 15 minutes your device will reboot by itself, boot back into fastboot mode and boot the UEFI image again and wait until you see the language selection screen in Windows.
+
+> You may notice that everything feels very slow. This is normal and will be fixed in the next dew steps
+
+### Booting the mass storage image
+- Boot back into fastboot mode.
+- Boot the mass storage image again. Replace `path\to\msc.img` with the actual path of the image
+```cmd
+fastboot boot path\to\msc.img
+```
+
+#### Entering mass storage mode
+> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
+- Select **UEFI Boot Menu**.
+- Select **USB Attached SCSI (UAS) Storage**.
+- Press the **power** button twice to confirm.
+
+### Reinstalling drivers
+> After a minute or two a disk called **WINBETALM** should automatically appear in Windows Explorer.
+
+- Once it does, open **OfflineUpdater.cmd** again and wait for the drivers to reinstall. This process will take around 20 minutes.
 
 ### Reboot to EDL
 > If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
