@@ -165,7 +165,7 @@ fastboot boot path\to\betalm-uefi.img
 #### Reboot back to Android
 - Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
-## [Last step: Setting up dualboot](dualboot.md)
+## [Last step: Setting up dualboot](4-dualboot.md)
 
 
 
