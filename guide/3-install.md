@@ -14,6 +14,7 @@
 - [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
 ### Reboot to fastboot mode
+> If you aren't already in fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
 #### Boot to the mass storage mode image
@@ -104,6 +105,9 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
+### Copying your boot.img into Windows
+- Drag and drop the **magisk_patched.img** into the **WINBETALM** disk in Windows Explorer, then rename it to **boot.img**
+
 ### Installing drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
@@ -137,30 +141,15 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 fastboot boot path\to\betalm-uefi.img
 ```
 
-> After around 15 minutes your device will reboot by itself, boot back into fastboot mode and boot the UEFI image again and wait until you see the language selection screen in Windows.
+> After around 15 minutes your screen will go black. When it does, force reboot your device using **volume down** + **power**, then boot back into fastboot mode and boot the UEFI image one more time and wait until you see the language selection screen in Windows.
 
-> You may notice that everything feels very slow. This is normal and will be fixed in the next dew steps
-
-### Booting the mass storage image
-- Boot back into fastboot mode.
-- Boot the mass storage image again. Replace `path\to\msc.img` with the actual path of the image
-```cmd
-fastboot boot path\to\msc.img
-```
-
-#### Entering mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+> You may notice that everything feels very slow. This is normal and will be fixed in the next few steps
 
 ### Reinstalling drivers
-> After a minute or two a disk called **WINBETALM** should automatically appear in Windows Explorer.
-
-- Once it does, open **OfflineUpdater.cmd** again and wait for the drivers to reinstall. This process will take around 20 minutes.
+> Reinstall the drivers by following the steps in the [driver updating guide](update-old.md)
 
 ### Reboot to EDL
-> If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
+> If you didn't flash the engineering ABL earlier in this guide, you can skip this step and simply reboot your device
 - Open **Device Manager** on your PC
 - Hold **volume down** + **power**.
 - After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
@@ -177,7 +166,6 @@ fastboot boot path\to\msc.img
 - Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
 ## [Last step: Setting up dualboot](dualboot.md)
-
 
 
 
