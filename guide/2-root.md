@@ -47,7 +47,7 @@ fastboot reboot
 - Follow the instructions on the screen, and your device should reboot after a few seconds.
 - Now boot back into fastboot mode for the last section of the guide.
 
-## [Last step: Installing Windows](3-install.md)
+## [Next step: Installing Windows](3-install.md)
 
 
 
