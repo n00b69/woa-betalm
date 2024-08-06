@@ -97,7 +97,7 @@ exit
 > [!Warning]
 > DO NOT USE 24H2!!!
 
-> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
+> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim or 22631.2861.XXXXXXX.esd)
 
 ```cmd
 dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
@@ -109,7 +109,7 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 - Drag and drop the **magisk_patched.img** into the **WINBETALM** disk in Windows Explorer, then rename it to **boot.img**
 
 ### Installing drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
+- Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
 > If it asks you to enter a letter, enter the drive letter of **WINBETALM** (which should be **X**), then press enter
   
