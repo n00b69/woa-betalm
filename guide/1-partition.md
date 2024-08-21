@@ -150,7 +150,7 @@ quit
 
 ### Formatting Windows drive
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINBETALM
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINBETALM
 ```
 
 ### Formatting ESP drive
