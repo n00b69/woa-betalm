@@ -10,6 +10,8 @@
 - [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
 
 - [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
+
+- [Mass storage image](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.img)
   
 - [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
 
@@ -41,10 +43,10 @@
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
-#### Boot to the UEFI
-> Replace `path\to\betalm-uefi.img` with the actual path of the UEFI image
+#### Boot into the mass storage mode image
+> Replace `path\to\msc.img` with the actual path of the image
 ```cmd
-fastboot boot path\to\betalm-uefi.img
+fastboot boot path\to\msc.img
 ```
 
 #### Enabling mass storage mode
