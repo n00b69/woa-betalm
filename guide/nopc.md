@@ -4,18 +4,18 @@
 
 ## Installing Windows without a PC
 > [!Warning]
-> This page and its files are still in its early stages of development. Do not use unless you have been asked to test it.
-> 
-> Seriously, do not use it.
+> This guide currently requires you to have LineageOS 20 installed, install it first if you haven't already.
+>
+> Decryption in TWRP does not work on stock LG roms.
 
 ### Prerequisites
-- Unlocked bootloader & rooted LG G8s
+- A rooted LG G8s running LineageOS 20
 
-- [LG G8s WinInstaller](https://github.com/n00b69/woa-betalm/releases/tag/WinInstaller)
+- [LG G8s WinInstaller](https://github.com/n00b69/woa-betalm/releases/download/Files/BetalmWinInstaller.zip)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
-- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedtwrp.img)
+- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/twrp-installer-3.7.1_FBE_V2-betalm-windows.zip)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
@@ -27,8 +27,6 @@
 
 > [!Important]
 > This guide assumes you have already unlocked your bootloader and are already rooted, if this is not the case, you'll still need a PC to do that.
-> 
-> This guide also requires you to use LineageOS, due to the lack of decryption support in TWRP when using the stock LG rom. 
 
 ### Flash the modified TWRP
 - In **Magisk**, select the **betalm-twrp-installer.zip** and flash it.
