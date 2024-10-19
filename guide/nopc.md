@@ -117,7 +117,7 @@ quit
 
 ### Enabling GPU
 > Currently, GPU drivers are not installed when you first boot Windows. To fix this, we do the following
-- Navigate to `C:\installer\Driver` and run **OnlineUpdater.cmd**
+- Navigate to `C:\installer\Driver` and run **GPU.cmd**
 - If a popup asks you to install an unverified driver, click `Install this driver anyway`.
 - Once it is finished, open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
 - Press `Update Driver` > `Browse my computer for drivers` > `Let me pick from a list of available drivers on my computer`, then select **LG G8S Adreno 640 GPU** and press `Next`.
