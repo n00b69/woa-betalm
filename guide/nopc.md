@@ -117,6 +117,14 @@ quit
 > [!Tip]
 > If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 
+### Enabling GPU
+> Currently, GPU drivers are not installed when you first boot Windows. To fix this, we do the following
+- Navigate to `C:\installer\Driver` and run **OnlineUpdater.cmd**
+- If a popup asks you to install an unverified driver, click `Install this driver anyway`.
+- Once it is finished, open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
+- Press `Update Driver` > `Browse my computer for drivers` > `Let me pick from a list of available drivers on my computer`, then select **LG G8S Adreno 640 GPU** and press `Next`.
+- Your screen should go black for a few seconds, after which you'll have succesfully installed the GPU drivers.
+
 #### Booting to Android
 - Run the **Android** shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access).
 
