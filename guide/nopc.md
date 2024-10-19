@@ -110,7 +110,7 @@ quit
 ### Flashing WinInstaller
 - In TWRP, select **Install** and then locate **WinInstaller.zip** and flash it.
 > [!Note]
-- Wait untill all processes complete and your device boots into Windows. This will take around 15-20 minutes.
+> Wait untill all processes complete and your device boots into Windows. This will take around 15-20 minutes.
 
 > [!Tip]
 > If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
