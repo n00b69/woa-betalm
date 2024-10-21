@@ -80,6 +80,7 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 
 ### Installing drivers
 - Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
+- Also drag and drop the drivers folder into **WINBETALM** after the drivers have finished installing. This is important for later.
 
 > If it asks you to enter a letter, enter the drive letter of **WINBETALM** (which should be **X**), then press enter
   
@@ -105,7 +106,8 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Booting Windows
-- Reboot your device by holding the **volume down** + **power** buttons until the text on the screen disappears, then immediately release the **power** button whilst continuing to hold **volume down**
+- Reboot into fastboot mode by holding the **volume down** + **power** buttons until the text on the screen disappears, then immediately release the **power** button whilst continuing to hold **volume down**.
+> If your phone turns on instead, turn it off while the cable is plugged in, and keep holding tbe **volume down** button until it enters fastboot mode.
 
 > Replace `path\to\betalm-uefi.img` with the actual path of the image
 ```cmd
@@ -114,27 +116,18 @@ fastboot boot path\to\betalm-uefi.img
 
 > After around 15 minutes your screen will go black. When it does, force reboot your device using **volume down** + **power**, then boot back into fastboot mode and boot the UEFI image one more time and wait until you see the language selection screen in Windows.
 
-> You may notice that everything feels very slow. This is normal and will be fixed in the next few steps
+> You may notice that everything feels very slow. This is normal and will be fixed in the next step.
 
-### Reinstalling drivers
-> Reinstall the drivers by following the steps in the [driver updating guide](update-old.md)
+### Enabling GPU
+> Currently, GPU drivers are not installed when you first boot Windows. To fix this, we do the following
+- Navigate to `C:\betalm-drivers` and run **GPU.cmd**
+- If a popup asks you to install an unverified driver, click `Install this driver anyway`.
+- Once it is finished, open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
+- Press `Update Driver` > `Browse my computer for drivers` > `Let me pick from a list of available drivers on my computer`, then select **LG G8S Adreno 640 GPU** and press `Next`.
+- Your screen should go black for a few seconds, after which you'll have succesfully installed the GPU drivers.
 
-### Reboot to EDL
-> If you didn't flash the engineering ABL earlier in this guide, you can skip this step and simply reboot your device
-- Open **Device Manager** on your PC
-- Hold **volume down** + **power**.
-- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
-
-#### Flashing stock ABL
-> Or your IMEI won't work
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
-- Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **abl_a** file in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`
-- Do the same thing for **abl_b**.
-
-#### Reboot back to Android
-- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+#### Reboot back into Android
+- Run the **Android** shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
 ## [Last step: Setting up dualboot](4-dualboot.md)
 
