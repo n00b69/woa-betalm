@@ -14,7 +14,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [x] Charging (USB)
+- [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
 - [x] GPU
