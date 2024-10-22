@@ -13,7 +13,7 @@
 
 - [QFILHelper](https://github.com/Beliathal/QFILHelper) Optional, for easier partition backups
 
-- [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin) Only needed if you don't have fastboot
+- [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
   
 - [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
 
@@ -118,7 +118,7 @@ rm $
 #### Recreating userdata
 > Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
-> Replace **60GB** with the end value you want **userdata** to have
+> Replace **60GB** with the end value you want **userdata** to have. In this example Android will have 60GB-17.7GB = 42.3GB of usable storage space.
 ```cmd
 mkpart userdata ext4 17.7GB 60GB
 ```
@@ -150,24 +150,24 @@ set $ esp on
 quit
 ```
 
-### Formatting Windows drive
-> [!note]
-> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
+### Format all data
+- Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
+
+#### Reboot your phone
+> Once it is booted, it might tell you decryption was unsuccesful and it will ask you to erase all data.
+- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings), then reboot back into TWRP.
+
+### Formatting win and esp partitions
+> After rebooting back into TWRP
 ```cmd
 adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINBETALM
 ```
-
-### Formatting ESP drive
 ```cmd
 adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPBETALM
 ```
 
-### Format all data
-- Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
-
-### Reboot your phone
-> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
-- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
+#### Reboot your phone
+> In preparation for the next step
 
 ## [Next step: Rooting your phone](2-root.md)
 
