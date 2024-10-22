@@ -5,16 +5,15 @@
 ## Installing Windows
 
 ### Prerequisites
+- [Mass storage image](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.img)
+
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.img)
-
 - [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
 ### Reboot to fastboot mode
-> If you aren't already in fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
 #### Boot to the mass storage mode image
@@ -28,6 +27,9 @@ fastboot boot path\to\msc.img
 - Select **UEFI Boot Menu**.
 - Select **USB Attached SCSI (UAS) Storage**.
 - Press the **power** button twice to confirm.
+
+> [!Note]
+> If you are facing issues (e.g your device randomly reboots), follow [the steps described in this guide](https://github.com/n00b69/woa-betalm/blob/main/guide/troubleshooting.md#the-device-reboots-in-mass-storage-mode) for an alternative way of entering mass storage mode.
 
 ### Diskpart
 > [!WARNING]
@@ -105,10 +107,17 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Booting Windows
+#### Remove the drive letter for ESP
+> If this does not work, ignore it and skip to the next command. This phantom drive will disappear the next time you reboot your PC.
+```cmd
+mountvol y: /d
+```
+
+### Rebooting into fastboot mode
 - Reboot into fastboot mode by holding the **volume down** + **power** buttons until the text on the screen disappears, then immediately release the **power** button whilst continuing to hold **volume down**.
 > If your phone turns on instead, turn it off while the cable is plugged in, and keep holding tbe **volume down** button until it enters fastboot mode.
 
+### Boot into the UEFI
 > Replace `path\to\betalm-uefi.img` with the actual path of the image
 ```cmd
 fastboot boot path\to\betalm-uefi.img
