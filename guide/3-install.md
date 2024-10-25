@@ -82,7 +82,6 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 
 ### Installing drivers
 - Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
-- Also drag and drop the drivers folder into **WINBETALM** after the drivers have finished installing. This is important for later.
 
 > If it asks you to enter a letter, enter the drive letter of **WINBETALM** (which should be **X**), then press enter
   
@@ -129,9 +128,7 @@ fastboot boot path\to\betalm-uefi.img
 
 ### Enabling GPU
 > Currently, GPU drivers are not installed when you first boot Windows. To fix this, we do the following
-- Navigate to `C:\betalm-drivers` and run **GPU.cmd**
-- If a popup asks you to install an unverified driver, click `Install this driver anyway`.
-- Once it is finished, open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
+- Open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
 - Press `Update Driver` > `Browse my computer for drivers` > `Let me pick from a list of available drivers on my computer`, then select **LG G8S Adreno 640 GPU** and press `Next`.
 - Your screen should go black for a few seconds, after which you'll have succesfully installed the GPU drivers.
 
