@@ -37,6 +37,6 @@
 - In TWRP, select **Install** and then locate **BetalmDriverUpdater.zip** and flash it.
 - Once you're given the option to reboot, do so.
 > [!Note]
-> Wait untill all processes complete and your device boots back Windows. This will take around 20-30 minutes.
+> Wait untill all processes complete and your device boots back into Windows. This will take around 20-30 minutes.
 
 ## Finished!
