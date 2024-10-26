@@ -114,18 +114,6 @@ quit
 > Once it is booted, it should tell you decryption was unsuccesful and it will ask you to erase all data.
 - Press this button to erase all data, let the phone boot back up, then reboot to make sure Android works. 
 
-### Boot back into EDL
-> To restore the original ABL. If you have not flashed the engineering ABL before, you can skip this step and consider the uninstallationna success. 
-
-#### Restoring original ABL
-- Open Qfil using the same steps as before.
-- In the Partition manager, right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
-- Select the **abl_a.bin** backup you made earlier in this guide located in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#`.
-- Do the same thing for **abl_b**. 
-
-### Reboot your device
-- Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons. 
-
 ## Finished!
 
 
