@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s.img)
 
 ### Reboot into fastboot mode
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
@@ -24,20 +24,16 @@ cd path\to\platform-tools
 ```
 
 #### Boot into the modded TWRP
-> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+> Replace `path\to\modded-twrp-g8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\moddedg8s.img
+fastboot boot path\to\modded-twrp-g8s.img
 ```
 
 ### Formatting Windows and ESP partitions
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINBETALM
-```
-
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPBETALM
+adb shell format
 ```
 
 ## [Next step: Reinstalling Windows](3-install.md)
