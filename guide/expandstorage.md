@@ -69,7 +69,7 @@
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
-#### Boot into TWRP
+#### Boot into the modded TWRP
 > Replace `path\to\modded-twrp-g8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
@@ -77,7 +77,7 @@
 fastboot boot path\to\modded-twrp-g8s.img
 ```
 
-#### Unmount all partitions
+#### Unmount data
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
