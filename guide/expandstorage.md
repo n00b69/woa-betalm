@@ -67,7 +67,9 @@
 - Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+> [!Note]
+> If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+- To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Boot into the modded TWRP
 > Replace `path\to\modded-twrp-g8s.img` with the actual path of the provided TWRP image
@@ -154,7 +156,6 @@ quit
 #### Erasing userdata
 > [!Warning]
 > DO NOT PRESS **Erase Entire Flash**, this will wipe your entire UFS!
-
 - Select the **userdata** partition.
 - Press **Erase** to erase its contents.
 - Exit Partition Manager.
