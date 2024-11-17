@@ -15,7 +15,7 @@
 
 - [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
   
-- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s.img)
 
 ### Notes
 > [!WARNING]  
@@ -83,11 +83,11 @@ cd path\to\platform-tools
 - To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Boot into the modded TWRP
-> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+> Replace `path\to\modded-twrp-g8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\moddedg8s.img
+fastboot boot path\to\modded-twrp-g8s.img
 ```
 
 ### Backing up your boot image
