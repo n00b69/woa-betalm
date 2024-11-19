@@ -15,7 +15,7 @@
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
-- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/twrp-installer-3.7.1_FBE_V2-betalm-windows.zip)
+- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s-installer.zip)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
@@ -29,7 +29,7 @@
 > This guide assumes you have already unlocked your bootloader and are already rooted, if this is not the case, you'll still need a PC to do that.
 
 ### Flash the modified TWRP
-- In **Magisk**, select the **betalm-twrp-installer.zip** and flash it.
+- In **Magisk**, select the **modded-twrp-g8s-installer.zip** and flash it.
 - Return to the main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
 
 #### Opening TWRP terminal
@@ -61,9 +61,9 @@ rm $
 #### Recreating userdata
 > Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
-> Replace **64GB** with the end value you want **userdata** to have. In this example your available usable space in Android will be 64GB-17.7GB = 47GB
+> Replace **64GB** with the end value you want **userdata** to have. In this example your available usable space in Android will be 64GB-17.7GB = **47GB**
 ```cmd
-mkpart userdata ext4 1717GB 64GB
+mkpart userdata ext4 17.7GB 64GB
 ```
 
 #### Creating ESP partition
