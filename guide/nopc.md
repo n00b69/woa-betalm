@@ -11,11 +11,13 @@
 ### Prerequisites
 - A rooted LG G8s running LineageOS 20
 
+- [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
+
+- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s-installer.zip)
+
 - [LG G8s WinInstaller](https://github.com/n00b69/woa-betalm/releases/download/Files/BetalmWinInstaller.zip)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
-
-- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s-installer.zip)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
@@ -29,8 +31,16 @@
 > This guide assumes you have already unlocked your bootloader and are already rooted, if this is not the case, you'll still need a PC to do that.
 
 ### Flash the modified TWRP
+- Download **Magisk.apk** and rename it to **Magisk.zip** and leave it in your `Download` folder. This is necessary because flashing TWRP will remove your root.
 - In **Magisk**, select the **modded-twrp-g8s-installer.zip** and flash it.
 - Return to the main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
+
+### Rerooting your device
+- Once booted into TWRP, select **Install** and locate **Magisk.zip** and flash it.
+- Reboot to Android, open the Magisk app, and follow the steps on the screen to complete the root process.
+
+#### Reboot into TWRP
+- Return to the Magisk main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
 
 #### Opening TWRP terminal
 - Once booted into TWRP press the **Advanced** button on the bottom right of the screen, then press **Terminal**.
