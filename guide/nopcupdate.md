@@ -3,17 +3,13 @@
 # Running Windows on the LG G8s
 
 ## Updating drivers without a PC
-> [!Warning]
-> This guide currently requires you to have LineageOS 20 installed, install it first if you haven't already.
->
-> Decryption in TWRP does not work on stock LG roms.
 
 ### Prerequisites
-- A rooted LG G8s running LineageOS 20 with Windows already installed
+- A rooted LG G8s with LineageOS 20 or an SD card
 
-- [LG G8s DriverUpdater](https://github.com/n00b69/woa-betalm/releases/download/Files/BetalmDriverUpdater.zip)
+- [LG G8s DriverUpdater (LOS20)](https://github.com/n00b69/woa-betalm/releases/download/Files/BetalmDriverUpdater.zip) or [LG G8s DriverUpdater (SD card)](https://github.com/n00b69/woa-betalm/releases/download/Files/BetalmDriverUpdaterSDCARD.zip) (If you are using an SD card)
 
-- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/twrp-installer-3.7.1_FBE_V2-betalm-windows.zip)
+- [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s-installer.zip)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
@@ -26,11 +22,11 @@
 > This guide assumes you have already installed Windows. If you haven't, use the [installation guide](nopc.md) instead.
 
 ### Preparing necessary files
-- Download **BetalmDriverUpdater.zip** and keep it in your internal storage.
+- Download **BetalmDriverUpdater.zip** and keep it in your **internal storage** (if you are using LineageOS 20), else, put it in your **SD card**.
 
 ### Flash the modified TWRP
 > Or boot into TWRP if you've already installed it.
-- In **Magisk**, select the **betalm-twrp-installer.zip** and flash it.
+- In **Magisk**, select the **modded-twrp-g8s-installer.zip** and flash it.
 - Return to the main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
 
 ### Flashing DriverUpdater
@@ -40,3 +36,35 @@
 > Wait untill all processes complete and your device boots back into Windows. This will take around 20-30 minutes.
 
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
