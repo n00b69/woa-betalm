@@ -11,8 +11,6 @@
 
 - [Modified TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s-installer.zip)
 
-- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
-
 ### Notes
 > [!WARNING]  
 > 
