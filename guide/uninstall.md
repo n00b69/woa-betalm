@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools) 
   
-- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img) 
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s.img) 
 
 ### Notes
 > [!WARNING]
@@ -33,20 +33,22 @@ cd path\to\platform-tools
 ``` 
 
 #### Boot into the modded TWRP
-> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+> Replace `path\to\modded-twrp-g8s.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\moddedg8s.img
+fastboot boot path\to\modded-twrp-g8s.img
 ``` 
 
 #### Unmount data
+> Ignore any possible errors and continue
+>
+> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
 
 ### Preparing parted
-> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb shell parted /dev/block/sda
 ``` 
