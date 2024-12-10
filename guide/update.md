@@ -5,7 +5,7 @@
 ## Updating drivers
 
 ### Prerequisites
-- [Mass storage image](https://github.com/n00b69/woa-betalm/releases/download/Files/msc.img)
+- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s.img)
 
 - [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
 
@@ -15,20 +15,22 @@
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
-#### Boot into the mass storage mode image
-> Replace `path\to\msc.img` with the actual path of the image
+### Boot modified TWRP recovery
+> Replace `path\to\modded-twrp-g8s.img` with the actual path of the image
 ```cmd
-fastboot boot path\to\msc.img
+fastboot boot path\to\modded-twrp-g8s.img
 ```
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+#### Execute the msc script
+```cmd
+adb shell msc
+```
 
 > [!Note]
-> After 1-2 minutes **WINBETALM** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
+> **WINBETALM** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
+
+> [!Note]
+> If you are facing issues (e.g your device does not enter mass storage mode), follow [the steps described in this guide](https://github.com/n00b69/woa-betalm/blob/main/guide/troubleshooting.md#mass-storage-mode-does-not-work) for alternative ways of entering mass storage mode.
 
 ### Diskpart
 ```cmd
@@ -57,8 +59,9 @@ exit
 > If it asks you to enter a letter, enter the drive letter of **WINBETALM** (which should be **X**), then press enter
 
 ### Reboot your device
-> Force reboot your phone by holding **volume down** + **power** until you see the LG logo.
->
+```cmd
+adb reboot
+```
 > If you end up in Android instead of Windows, simply use the WOA Helper app to switch back.
 
 ## Finished!
