@@ -5,6 +5,8 @@
 ## Updating drivers
 
 ### Prerequisites
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
 - [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/modded-twrp-g8s.img)
 
 - [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
