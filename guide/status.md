@@ -21,6 +21,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [ ] Flashlight
 - [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
+- [ ] Microphone
 - [x] SD card
 - [x] Touchscreen
 - [x] UFS
