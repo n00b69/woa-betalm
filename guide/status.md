@@ -17,22 +17,24 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
-- [x] GPU
+- [ ] DisplayPort ```will likely never work```
+- [ ] Flashlight
+- [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
-- [x] SD Card
+- [x] SD card
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] WiFi
 
 #### Sensors
-- [x] Accelerometer ```orientations are inverted```
-- [x] Compass ```recognized but not fully working```
+- [ ] Accelerometer
+- [ ] Compass
 - [ ] Fingerprint
 - [x] GPS
-- [x] Gyroscope ```orientations are inverted```
+- [ ] Gyroscope
 - [ ] Light sensor
-- [x] Magnetometer
+- [ ] Magnetometer
 - [ ] Proximity
 
 
