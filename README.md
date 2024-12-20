@@ -20,6 +20,7 @@ All the files here have been contributed by other users, here you will find a gu
 
 - [Troubleshooting](guide/troubleshooting.md)
 
+
 ## Miscellaneous
 - [Dualboot setup](guide/dualboot.md)
 
@@ -30,6 +31,11 @@ All the files here have been contributed by other users, here you will find a gu
 - [Reinstall instructions](guide/reinstall.md)
 
 - [Uninstall instructions](guide/uninstall.md)
+
+
+## Maintainers
+[<img alt="remtrik" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/69907487?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/remtrik)
+
 
 ## Contributors
 [<img alt="MollySophia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20746884?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/MollySophia)
