@@ -20,7 +20,7 @@
 > This guide assumes you have already installed Windows. If you haven't, use the [installation guide](nopc.md) instead.
 
 ### Preparing necessary files
-- Download **BetalmWinInstaller.zip** and keep it in your **internal storage** (if you are using LineageOS 20), else, put it in your **SD card**.
+- Download **WinInstaller.zip** and keep it in your **internal storage** (if you are using LineageOS 20), else, put it on your **micro SD card**.
 
 ### Flash the modified TWRP
 > Or boot into TWRP if you've already installed it.
@@ -28,10 +28,10 @@
 - Return to the main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
 
 ### Flashing WinInstaller
-- In TWRP, select **Install** and then locate **BetalmWinInstaller.zip** and flash it.
+- In TWRP, select **Install** and then locate **WinInstaller.zip** and flash it.
 - Once you're given the option to reboot, do so.
 > [!Note]
-> Wait untill all processes complete and your device boots back into Windows. This will take around 20-30 minutes.
+> Wait until all processes complete and your device boots back into Windows. This will take around 20-30 minutes.
 
 ## Finished!
 
